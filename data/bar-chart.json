@@ -1,1 +1,8 @@
-[{% for chart in site.data.bar-chart %}{"letter": "{{ chart.year }}","frequency": "{ chart.frequency }}"}{% if forloop.last == false %},{% endif %}{% endfor %}]
+[
+  {% for chart in site.data.bar-chart %}
+  {
+    "letter": "{{ chart.year }}",
+    "frequency": "{ chart.frequency }}"
+  }{% if forloop.last == false %},{% endif %}
+  {% endfor %}
+]
