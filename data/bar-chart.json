@@ -1,11 +1,9 @@
 ---
 layout: none
 ---
-[
-  {% for chart in site.data.bar-chart %}
+[{% for chart in site.data.bar-chart %}
   {
     "letter": "{{ chart.year }}",
     "frequency": "{{ chart.frequency }}"
   }{% if forloop.last == false %},{% endif %}
-  {% endfor %}
-]
+{% endfor %}]
