@@ -3,7 +3,7 @@ layout: none
 ---
 [{% for chart in site.data.pie-chart %}
   {
-    "letter": "{{ chart.age }}",
-    "frequency": "{{ chart.population }}"
+    "age": "{{ chart.age }}",
+    "population": "{{ chart.population }}"
   }{% if forloop.last == false %},{% endif %}
 {% endfor %}]
