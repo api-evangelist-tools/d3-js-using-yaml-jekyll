@@ -3,4 +3,16 @@ layout: default
 title: Delivering D3.js Data Sources Using YAML via Jekyll
 ---
 
-Yo!
+<h3>D3.js Visualizations Using YAML and Jekyll</h3>
+<p><a href="http://d3.js.yaml.jekyll.apievangelist.com/bar-chart/"><img src="http://d3.js.yaml.jekyll.apievangelist.com/images/d3-js-bar-chart.png" width="40%" style="padding: 15px;" /></a></p>
+<p>I am increasingly using D3.js as part of my storytelling. Since all my websites run using Jekyll, and published entirely using Github repositories shared as Github Page sites, it makes sense to standardize how I drive my D3.js visualizations.</p>
+<p>Jekyll provides a wealth of data management tools, including the ability to manage YAML dta stores in the _data folder. I feel this approach is not very well understand, and is not something that has a wealth of examples out there regarding how to use for managing open data--I am looking to change that.</p>
+<p>I like my data visualizations beautiful, dynamic, with the data right behind--making D3.js the obvious choice. For this demonstration, I took data intended for use as a bar and pie chart, and published as YAML to this Github repositories _data folder. This approach to centrally storing machine readable data, in the simple, more readable YAML format, makes the data behind much more accessible in my opinion.</p>
+<script src="https://gist.github.com/kinlane/0ee5a0eff2de2038dc3b69b88f563097.js"></script>
+<p>The problem with this format is to drive my D3.js visualization, I need it in JSON format. Using Jekyll and Liquid, I can easiliy establish dynamic versions of my data in JSON, XML, or any other format I need it in. I place these JSON pages in a separate folder I am just calling /data.</p>
+<script src="https://gist.github.com/kinlane/148fd30889a79d324bd21e7c271cbb5b.js"></script>
+<p>Now I have the JSON I need to power my D3.js visualizations. I created separate editions for my bar and pie charts, and have the HTML, CSS, and JavaScript for each chart, in its own file.</p>
+<script src="https://gist.github.com/kinlane/27a4628dbb9c3f4392b2efb8d7500366.js"></script>
+<p>There are two things being accomplished here. 1) I'm decouple the data source in a way that makes it easier to swap in and out different D3.js visualizations, and 2) I'm centralizing the data management, making it easily managed by even a non-technical operator, who just needs to grasp how Jekyll and YAML works--which dramatically lowers the barriers to entry for managing data needed for visualizations.</p>
+<p>There is definitely a learning curve involved here. Jekyll, Github Pages, and YAML take some time to absorb, but the reverse engineerability of this approach lends itself to reuse, and reworking by an type of data curious person. I'm hoping to keep publishing any new D3.js visualization I create in this way, to provide small, forkable, data driven visualizations that can be used as part of data storytelling efforts.</p>
+<p>As a 25 year data veteran, I find myself extremely intrigued with the potential of Jekyll as a data management solution, something that when you combine with the social coding benefits of Github, and Github Pages has unlimited possibilities. I'm going to keep working to define small, modular examples of how to do this, and publish as individual Github lessons for others to fork and learn from.</p>
