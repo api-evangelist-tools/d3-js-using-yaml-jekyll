@@ -1,3 +1,3 @@
 # Delivering D3.js Data Sources Using YAML via Jekyll
 
-Some detail about this project w/ URL - http://example.com
+Dynamically providing the data sources you need for a D3.js visualization using YAML driven Jekyll website - http://d3.js.yaml.jekyll.apievangelist.com/
