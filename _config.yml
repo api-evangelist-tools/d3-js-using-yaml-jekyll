@@ -1,6 +1,6 @@
-title:        API Evangelist
-description:  A network of research sites dedicated to the technology, business, and politics of APIs.
-url:          http://apievangelist.com
+title:        Delivering D3.js Data Sources Using YAML via Jekyll
+description:  Dynamically providing the data sources you need for a D3.js visualization using YAML driven Jekyll website.
+url:          http://d3.js.yaml.jekyll.apievangelist.com
 
 version:      1.1.1
 
@@ -12,16 +12,7 @@ permalink:    pretty
 pygments:     true
 highlighter:  rouge
 
-permalink: /:categories/:year/:month/:day/:title/
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-
-paginate: 20
-paginate_path: "/blog/page:num"
-
-categories_path : /categories.html
-tags_path : /tags.html
-
-production_url : http://apievangelist.com
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md",".DS_Store"]
 
 image : http://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png
 imagesecure : https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png
