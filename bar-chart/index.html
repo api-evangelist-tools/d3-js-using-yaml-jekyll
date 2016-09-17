@@ -54,7 +54,7 @@ var yAxis = d3.svg.axis()
     .orient("left")
     .ticks(10);
 
-var svg = d3.select("chart").append("svg")
+var svg = d3.select("#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -79,7 +79,7 @@ d3.json("/data/bar-chart.json", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Number of Patent Applications");
+      .text("Number of Years");
 
   svg.selectAll(".bar")
       .data(data)
@@ -97,4 +97,4 @@ function type(d) {
 }
 
 </script>
-<chart></chart>
+<p id="chart"></p>
