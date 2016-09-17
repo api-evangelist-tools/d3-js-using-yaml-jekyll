@@ -1,3 +1,6 @@
+---
+layout: none
+---
 [
   {% for chart in site.data.bar-chart %}
   {
